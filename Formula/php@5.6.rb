@@ -42,7 +42,7 @@ class PhpAT56 < Formula
   # see https://github.com/php/php-src/pull/3472
   patch :DATA
 
-  needs :cxx11
+  # needs :cxx11 # Removed this check due to Homebrew/brew#5599 and Homebrew/homebrew-core#36362
 
   def install
     # Ensure that libxml2 will be detected correctly in older MacOS
